@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Sign Up">
+        <meta name="author" content="shh">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/60a2c02fd7.js" crossorigin="anonymous"></script>
+        <style>
+            body{
+                
+            }
+        </style>
+    </head>
+    <body style="background-color: white;">
+        </div>
+        <div class="sign-main-container">
+            <h1 class="sign-heading">Sign Up</h1>
+            <form class="sign-up-form" onsubmit="submit()">
+                <div>
+                    <input class="text-input" type="text" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div>
+                    <input class="text-input" type="text" id="emailphone" required>
+                    <label>Email/Phone</label>
+                </div>
+                <div>
+                    <input class="text-input" type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div>
+                    <input class="text-input" type="password" id="repassword" required>
+                    <label>Confirm Password</label>
+                </div>
+                <div class="radio-holder">
+                    <p style=" margin-left: 7rem;padding: 10px;">Are you 18+ <span style="padding: 20px;"><input type="radio" name="age" value="Yes">    Yes</span>
+                    <span><input type="radio" name="age" value="Yes">   No</span></p>
+                </div>
+            </form>
+            <p class="sign-term">By signing up you agree our <span style="padding-left: 1px;"class="terms">Terms and condition</span></p>
+            <button style="margin-left: 10rem;"class="signup" onsubmit="submit()">Sign Up</button>  
+
+        </div>
+    </body>
+</html>    

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    <script src="script.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="img-container"><img class="logo-image" src="logo1.png" alt="Logo"></div>
+
+        <nav>
+            <ul class="nav-un">
+                <li class="nav-list"><a href="home.html" class="nav-item"><span
+                            class="material-icons-outlined">home</i></a></li>
+                <li class="nav-list"><a href="trending.html" class="nav-item"><i class="material-icons-outlined">
+                            trending_up
+                        </i></a></li>
+                <div style="padding-right: 0; margin-right: 0;padding-top: 0px; margin-top: 0;"
+                    class="input-container nav-list" id="search-container">
+                    <input class="search-txt" type="text" placeholder="Search...">
+                    <span onclick="closesearch()" class="closed material-icons-outlined">
+                        close
+                    </span>
+                </div>
+                <li style="padding-left: 0; display: inline;" class="nav-list" id="hide-search">
+                    <button onclick="search()" class="search-btn nav-item" id="hide-search"><i
+                            class="search-button material-icons-outlined">
+                            search
+                        </i>
+                    </button>
+                </li>
+                <li class="nav-list"><a href="regional.html" class="nav-item"><span class="material-icons-outlined">
+                            terrain
+                        </span></a></li>
+                <li class="nav-list"><a href="recommend.html" class="nav-item"><span class="material-icons-outlined">
+                            recommend
+                        </span></a></li>
+            </ul>
+        </nav>
+        <div class="profile-container">
+            <ul class="profile-nav-un">
+                <li class="profile-nav-list"><a class="dropdown profile-nav-item" href="#"><span
+                            class="material-icons-outlined" style="font-size: 26px;">
+                            notifications
+                        </span></a>
+                </li>
+                <li class="profile-nav-list"><a class="profile-nav-item" href="#"><span onclick="myFunction()"
+                            class="dropdown dropbtn material-icons" style="font-size: 30px;">
+                            person
+                        </span></a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Profile.html">Your Profile</a>
+                        <a href="#about">Setting</a>
+                        <a href="#contact">Sign Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="profile-page-container">
+            <div class="personal-info-container">
+                <div class="profile-page-seperator">
+                    <div class="cover-background">
+
+                    </div>
+                </div>
+                <div class="profile-page-picture">
+                    <img class="profile-picture" src="male.png" alt="" srcset="">
+                </div>
+                <div class="profile-page-name">
+                    <p class="profile-displayed-name">Your Name</p>
+                    <p class="profile-user-name">@your_name</p>
+                </div>
+            </div>
+            <div class="profile-page-below">
+                <div class="profile-page-left">
+                    <h2>Awardee</h2>
+                    <p style="margin-top: 0.8em;" class="profile-left-text"><i
+                            style="color: black; font-size: 20px;padding: 2px;" class="far fa-smile"></i>Total Smiley
+                        you recieved:</p>
+                    <br>
+                    <p class="profile-left-text">Total beans you spilled:</p>
+                    <br>
+                    <p class="profile-left-text">Join Shh on ....</p>
+
+
+                </div>
+                <div class="your-post-container">
+                    <div class="post-holding-container">
+                        <div class="post-container">
+                            <div class="public-post-container-single">
+                                <img class="post-profile-photo" src="male.png">
+                                <div class="profile-name-container">
+                                    <label class="post-profile-name">Your Name</label>
+                                    <br>
+                                    <label class="time-post">time<span class="timepost-style">ago</span></label>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p class="post-font-family post-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                                    tincidunt mollis tortor ac luctus. Pellentesque sit amet sapien tempor, gravida lorem
+                                    quis, facilisis nisi. Curabitur eleifend interdum risus eu pretium. Donec ultrices
+                                    lobortis leo, commodo pulvinar mi consectetur quis. Morbi velit neque, sodales vel
+                                    imperdiet quis, porta vel nunc. Pellentesque ac elit arcu. Proin dui dolor, facilisis eu
+                                    dictum tempus, semper a ante. Ut fermentum massa quis velit molestie tristique.
+
+                                    Vivamus ullamcorper quam dui, id suscipit quam tristique ac. Quisque mi urna, commodo id
+                                    semper at, vestibulum vel ligula. Nunc eget interdum arcu. Praesent a est sit amet est
+                                    vehicula condimentum quis a justo. Class aptent taciti sociosqu ad litora torquent per
+                                    conubia nostra, per inceptos himenaeos. Curabitur sit amet rutrum diam. Suspendisse et
+                                    urna aliquet odio dapibus dapibus. Nunc bibendum nunc et finibus lobortis. Sed malesuada
+                                    magna eu pretium fermentum. Aenean interdum velit sed nisi consectetur facilisis.
+                                    Aliquam nec ullamcorper lorem. Nam in commodo felis, vel eleifend arcu. Donec ac
+                                    convallis arcu. Morbi id laoreet enim. Fusce sit amet mauris vitae sem rhoncus
+                                    elementum.</p>
+                            </div>
+                        </div>
+                        <div class="react-alignment-container">
+                            <div class="react-container">
+
+                                <button class="react-btn" onclick="increase(1)"><span class="material-icons-outlined">
+                                    insert_emoticon
+                                </span></span></button>
+                            <span id="number" class="number"></span>
+                            <button class="react-btn" onclick="increase(-1)"><span class="material-icons-outlined">
+                                    insert_emoticon
+                                </span> </i></button>
+                            <button class="react-btn comment" onclick="comment()"><span
+                                    class="material-icons-outlined">
+                                    comment
+                                </span>
+                            </button>
+                            <button class="react-btn share" onclick=""><span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </button>
+                            </div>
+                            <div class="comment-container" id="showcomment">
+                                <div class="public-comment-container">
+                                    <div class="public-comment-container-single">
+                                        <div class="public-comment-container-single-flex">
+                                            <img class="comment-profile-photo" src="male.png">
+                                            <label class="comment-profile-name"><a class="profile-name-no-style" href="Profile.html">YourName</a></label>
+                                        </div>
+                                        <div class="public-comment-content">
+                                            <p calss="public-comment-content-style">NICE COMMENT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-line"></div>
+                                <div class="add-comment-container">
+                                    <img src="male.png" class="comment-profile-photo">
+                                    <textarea class="add-comment" placeholder="Add comment"></textarea>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-holding-container">
+                        <div class="post-container">
+                            <div class="public-post-container-single">
+                                <img class="post-profile-photo" src="male.png">
+                                <div class="profile-name-container">
+                                    <label class="post-profile-name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p class="post-font-family post-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                                    tincidunt mollis tortor ac luctus. Pellentesque sit amet sapien tempor, gravida lorem
+                                    quis, facilisis nisi. Curabitur eleifend interdum risus eu pretium. Donec ultrices
+                                    lobortis leo, commodo pulvinar mi consectetur quis. Morbi velit neque, sodales vel
+                                    imperdiet quis, porta vel nunc. Pellentesque ac elit arcu. Proin dui dolor, facilisis eu
+                                    dictum tempus, semper a ante. Ut fermentum massa quis velit molestie tristique.
+
+                                    Vivamus ullamcorper quam dui, id suscipit quam tristique ac. Quisque mi urna, commodo id
+                                    semper at, vestibulum vel ligula. Nunc eget interdum arcu. Praesent a est sit amet est
+                                    vehicula condimentum quis a justo. Class aptent taciti sociosqu ad litora torquent per
+                                    conubia nostra, per inceptos himenaeos. Curabitur sit amet rutrum diam. Suspendisse et
+                                    urna aliquet odio dapibus dapibus. Nunc bibendum nunc et finibus lobortis. Sed malesuada
+                                    magna eu pretium fermentum. Aenean interdum velit sed nisi consectetur facilisis.
+                                    Aliquam nec ullamcorper lorem. Nam in commodo felis, vel eleifend arcu. Donec ac
+                                    convallis arcu. Morbi id laoreet enim. Fusce sit amet mauris vitae sem rhoncus
+                                    elementum.</p>
+                            </div>
+                        </div>
+                        <div class="react-alignment-container">
+                            <div class="react-container">
+
+                                <button class="react-btn" onclick="increase(1)"><span class="material-icons-outlined">
+                                    insert_emoticon
+                                </span></span></button>
+                            <span id="number" class="number"></span>
+                            <button class="react-btn" onclick="increase(-1)"><span class="material-icons-outlined">
+                                    insert_emoticon
+                                </span> </i></button>
+                            <button class="react-btn comment" onclick="comment()"><span
+                                    class="material-icons-outlined">
+                                    comment
+                                </span>
+                            </button>
+                            <button class="react-btn share" onclick=""><span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </button>
+                            </div>
+                            <div class="comment-container" id="showcomment">
+                                <div class="public-comment-container">
+                                    <div class="public-comment-container-single">
+                                        <div class="public-comment-container-single-flex">
+                                            <img class="comment-profile-photo" src="male.png">
+                                            <label class="comment-profile-name"><a class="profile-name-no-style" href="Profile.html">YourName</a></label>
+                                        </div>
+                                        <div class="public-comment-content">
+                                            <p calss="public-comment-content-style">NICE COMMENT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-line"></div>
+                                <div class="add-comment-container">
+                                    <img src="male.png" class="comment-profile-photo">
+                                    <textarea class="add-comment" placeholder="Add comment"></textarea>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-holding-container">
+                        <div class="post-container">
+                            <div class="public-post-container-single">
+                                <img class="post-profile-photo" src="male.png">
+                                <div class="profile-name-container">
+                                    <label class="post-profile-name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p class="post-font-family post-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                                    tincidunt mollis tortor ac luctus. Pellentesque sit amet sapien tempor, gravida lorem
+                                    quis, facilisis nisi. Curabitur eleifend interdum risus eu pretium. Donec ultrices
+                                    lobortis leo, commodo pulvinar mi consectetur quis. Morbi velit neque, sodales vel
+                                    imperdiet quis, porta vel nunc. Pellentesque ac elit arcu. Proin dui dolor, facilisis eu
+                                    dictum tempus, semper a ante. Ut fermentum massa quis velit molestie tristique.
+
+                                    Vivamus ullamcorper quam dui, id suscipit quam tristique ac. Quisque mi urna, commodo id
+                                    semper at, vestibulum vel ligula. Nunc eget interdum arcu. Praesent a est sit amet est
+                                    vehicula condimentum quis a justo. Class aptent taciti sociosqu ad litora torquent per
+                                    conubia nostra, per inceptos himenaeos. Curabitur sit amet rutrum diam. Suspendisse et
+                                    urna aliquet odio dapibus dapibus. Nunc bibendum nunc et finibus lobortis. Sed malesuada
+                                    magna eu pretium fermentum. Aenean interdum velit sed nisi consectetur facilisis.
+                                    Aliquam nec ullamcorper lorem. Nam in commodo felis, vel eleifend arcu. Donec ac
+                                    convallis arcu. Morbi id laoreet enim. Fusce sit amet mauris vitae sem rhoncus
+                                    elementum.</p>
+                            </div>
+                        </div>
+                        <div class="react-alignment-container">
+                            <div class="react-container">
+
+                                <button class="react-btn" onclick="increase(1)"><span class="material-icons-outlined">
+                                    insert_emoticon
+                                </span></span></button>
+                            <span id="number" class="number"></span>
+                            <button class="react-btn" onclick="increase(-1)"><span class="material-icons-outlined">
+                                    insert_emoticon
+                                </span> </i></button>
+                            <button class="react-btn comment" onclick="comment()"><span
+                                    class="material-icons-outlined">
+                                    comment
+                                </span>
+                            </button>
+                            <button class="react-btn share" onclick=""><span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </button>
+                            </div>
+                            <div class="comment-container" id="showcomment">
+                                <div class="public-comment-container">
+                                    <div class="public-comment-container-single">
+                                        <div class="public-comment-container-single-flex">
+                                            <img class="comment-profile-photo" src="male.png">
+                                            <label class="comment-profile-name"><a class="profile-name-no-style" href="Profile.html">YourName</a></label>
+                                        </div>
+                                        <div class="public-comment-content">
+                                            <p calss="public-comment-content-style">NICE COMMENT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-line"></div>
+                                <div class="add-comment-container">
+                                    <img src="male.png" class="comment-profile-photo">
+                                    <textarea class="add-comment" placeholder="Add comment"></textarea>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-holding-container">
+                        <div class="post-container">
+                            <div class="public-post-container-single">
+                                <img class="post-profile-photo" src="male.png">
+                                <div class="profile-name-container">
+                                    <label class="post-profile-name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <p class="post-font-family post-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                                    tincidunt mollis tortor ac luctus. Pellentesque sit amet sapien tempor, gravida lorem
+                                    quis, facilisis nisi. Curabitur eleifend interdum risus eu pretium. Donec ultrices
+                                    lobortis leo, commodo pulvinar mi consectetur quis. Morbi velit neque, sodales vel
+                                    imperdiet quis, porta vel nunc. Pellentesque ac elit arcu. Proin dui dolor, facilisis eu
+                                    dictum tempus, semper a ante. Ut fermentum massa quis velit molestie tristique.
+
+                                    Vivamus ullamcorper quam dui, id suscipit quam tristique ac. Quisque mi urna, commodo id
+                                    semper at, vestibulum vel ligula. Nunc eget interdum arcu. Praesent a est sit amet est
+                                    vehicula condimentum quis a justo. Class aptent taciti sociosqu ad litora torquent per
+                                    conubia nostra, per inceptos himenaeos. Curabitur sit amet rutrum diam. Suspendisse et
+                                    urna aliquet odio dapibus dapibus. Nunc bibendum nunc et finibus lobortis. Sed malesuada
+                                    magna eu pretium fermentum. Aenean interdum velit sed nisi consectetur facilisis.
+                                    Aliquam nec ullamcorper lorem. Nam in commodo felis, vel eleifend arcu. Donec ac
+                                    convallis arcu. Morbi id laoreet enim. Fusce sit amet mauris vitae sem rhoncus
+                                    elementum.</p>
+                            </div>
+                        </div>
+                        <div class="react-alignment-container">
+                            <div class="react-container">
+
+                                <button class="react-btn" onclick="increase(1)"><span class="material-icons-outlined">
+                                    insert_emoticon
+                                </span></span></button>
+                            <span id="number" class="number"></span>
+                            <button class="react-btn" onclick="increase(-1)"><span class="material-icons-outlined">
+                                    insert_emoticon
+                                </span> </i></button>
+                            <button class="react-btn comment" onclick="comment()"><span
+                                    class="material-icons-outlined">
+                                    comment
+                                </span>
+                            </button>
+                            <button class="react-btn share" onclick=""><span class="material-icons-outlined">
+                                    share
+                                </span>
+                            </button>
+                            </div>
+                            <div class="comment-container" id="showcomment">
+                                <div class="public-comment-container">
+                                    <div class="public-comment-container-single">
+                                        <div class="public-comment-container-single-flex">
+                                            <img class="comment-profile-photo" src="male.png">
+                                            <label class="comment-profile-name"><a class="profile-name-no-style" href="Profile.html">YourName</a></label>
+                                        </div>
+                                        <div class="public-comment-content">
+                                            <p calss="public-comment-content-style">NICE COMMENT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-line"></div>
+                                <div class="add-comment-container">
+                                    <img src="male.png" class="comment-profile-photo">
+                                    <textarea class="add-comment" placeholder="Add comment"></textarea>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-page-right">
+                    <h2>Category you follow:</h2>
+                    <div style="margin-top:1em;" class="following-category-container">
+                        <p class="following-category">Love</p>
+                        <button class="following-unfollow-btn">Unfollow</button>
+                    </div>
+                    <div class="following-category-container">
+                        <p class="following-category">Mistake</p>
+                        <button class="following-unfollow-btn">Unfollow</button>
+                    </div>
+                    <div class="following-category-container">
+                        <p class="following-category">Felling</p>
+                        <button class="following-unfollow-btn">Unfollow</button>
+                    </div>
+                    <div class="following-category-container">
+                        <p class="following-category">Friend</p>
+                        <button class="following-unfollow-btn">Unfollow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

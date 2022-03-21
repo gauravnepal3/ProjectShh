@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Home
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ 
+    <script src="https://kit.fontawesome.com/60a2c02fd7.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <style>
+        .post-container {
+            margin: 0em 3em 0 3em;
+        }
+        @media only screen and (max-width:500px){
+            .post-container{
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="img-container"><img class="logo-image" src="logo1.png" alt="Logo"></div>
+        <!--Main Logo-->
+
+        <nav>
+            <ul class="nav-un">
+                <li id="hide" class="hide nav-list"><a href="#" class="nav-item"><span class="material-icons">home</i></a></li>
+                <!--Home Page-->
+                <li id="hide"class="hide nav-list"><a href="trending.html" class="nav-item"><i class="material-icons-outlined">
+                            <!--Trending Page-->
+                            trending_up
+                        </i></a></li>
+                <div style="padding-right: 0; margin-right: 0;padding-top: 0px; margin-top: 0;"
+                    class="input-container nav-list" id="search-container">
+                    <!--Search Bar-->
+                    <input class="search-txt" type="text" placeholder="Search...">
+                    <span onclick="closesearch()" class="closed material-icons-outlined">
+                        <!--Closing the search bar-->
+                        close
+                    </span>
+                </div>
+                <li style="padding-left: 0; display: inline;" class="nav-list" id="hide-search">
+                    <button onclick="search()" class="search-btn nav-item" id="hide-search"><i
+                            class="search-button material-icons-outlined">
+                            <!--Seach Button-->
+                            search
+                        </i>
+                    </button>
+                </li>
+                <li id="hide"class="hide nav-list"><a href="regional.html" class="nav-item"><span class="material-icons-outlined">
+                            <!--Regional Page-->
+                            terrain
+                        </span></a></li>
+                <li id="hide" class="hide nav-list"><a href="recommend.html" class="nav-item"><span class="material-icons-outlined">
+                            <!--Recommend for you -->
+                            recommend
+                        </span></a></li>
+            </ul>
+        </nav>
+        <div class="profile-container">
+            <ul class="profile-nav-un">
+                <li id="hide" class="hide profile-nav-list"><a class="dropdown profile-nav-item" href="#"><span
+                            class="material-icons-outlined" >
+                            <!--Notification area -->
+                            notifications
+                        </span></a>
+                </li>
+                <li id="hide" class="hide profile-nav-list"><a class="profile-nav-item" href="#"><span onclick="myFunction()"
+                            class="dropdown dropbtn material-icons-outlined" >
+                            <!--Dropdown for visiting profile-->
+                            person
+                        </span></a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <!--Hidden div for dropdown-->
+                        <a href="Profile.html">Your Profile</a>
+                        <a href="#setting">Setting</a>
+                        <a href="#sign-out">Sign Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-container">
+        <!--Main Display Section-->
+        <div class="left-container">
+            <!--Ad Display at left-->
+            <div class="card">
+                <p>This is empty for now</p>
+            </div>
+
+        </div>
+        <div class="middle-container">
+            <!--Main content div-->
+            <div class="middle-card">
+                <div class="post">
+                    <div class="form">
+                        <!--Posting confession form-->
+                        <form class="post-form">
+                            <!--Posting form-->
+                            <label> <img class="posting-image" src="male.png" alt="Avatar"></label>
+                            <textarea class="text-area" placeholder="Spill the Beans"></textarea>
+                            <!--Textarea for writing post-->
+
+                            <div class="button-container">
+                                <button class="post-btn" onclick="">post</button>
+                                <!--Post Button-->
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="feed-container">
+                    <!--Feed Alignment Div-->
+                    <div class="post-holding-container">
+                        <!--Single Post Div Backend-->
+                        <div class="post-container">
+                            <div class="public-post-container-single">
+                                <!--Container for holding poster infp-->
+                                <img class="post-profile-photo" src="male.png">
+                                <!--User profile Image-->
+                                <div class="profile-name-container">
+                                    <label class="post-profile-name">Your Name</label>
+                                    <!--User Profile Name-->
+                                    <br>
+                                    <label class="time-post">time<span class="timepost-style">ago</span></label>
+                                    <!--How long the post was posted??-->
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <!--Text Holder-->
+                                <p class="post-font-family post-style">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur
+                                    tincidunt mollis tortor ac luctus. Pellentesque sit amet sapien tempor, gravida
+                                    lorem
+                                    quis, facilisis nisi. Curabitur eleifend interdum risus eu pretium. Donec ultrices
+                                    lobortis leo, commodo pulvinar mi consectetur quis. Morbi velit neque, sodales vel
+                                    imperdiet quis, porta vel nunc. Pellentesque ac elit arcu. Proin dui dolor,
+                                    facilisis eu
+                                    dictum tempus, semper a ante. Ut fermentum massa quis velit molestie tristique.
+
+                                    Vivamus ullamcorper quam dui, id suscipit quam tristique ac. Quisque mi urna,
+                                    commodo id
+                                    semper at, vestibulum vel ligula. Nunc eget interdum arcu. Praesent a est sit amet
+                                    est
+                                    vehicula condimentum quis a justo. Class aptent taciti sociosqu ad litora torquent
+                                    per
+                                    conubia nostra, per inceptos himenaeos. Curabitur sit amet rutrum diam. Suspendisse
+                                    et
+                                    urna aliquet odio dapibus dapibus. Nunc bibendum nunc et finibus lobortis. Sed
+                                    malesuada
+                                    magna eu pretium fermentum. Aenean interdum velit sed nisi consectetur facilisis.
+                                    Aliquam nec ullamcorper lorem. Nam in commodo felis, vel eleifend arcu. Donec ac
+                                    convallis arcu. Morbi id laoreet enim. Fusce sit amet mauris vitae sem rhoncus
+                                    elementum.</p>
+                            </div>
+                        </div>
+                        <div class="react-alignment-container">
+                            <!--Alignment Container-->
+                            <div class="react-container">
+                                <!--User reaction for post-->
+
+                                <button class="react-btn" onclick="increase(1)"><span class="material-icons-outlined">
+                                        <!--Smiley Button(Like button) -->
+                                        insert_emoticon
+                                    </span></span></button>
+                                <span id="number" class="number"></span>
+                                <button class="react-btn" onclick="increase(-1)"><span class="material-icons-outlined">
+                                        <!--Bad Mood(Dislike button)-->
+                                        mood_bad
+                                    </span> </i></button>
+                                <button class="react-btn comment" onclick="comment()">
+                                    <!--Comment Button-->
+                                    <span class="material-icons-outlined">
+                                        comment
+                                    </span>
+                                </button>
+                                <button class="react-btn share" onclick=""><span class="material-icons-outlined">
+                                        <!--Share Button-->
+                                        share
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="comment-container" id="showcomment">
+                                <!--Comment Div-->
+                                <div class="public-comment-container">
+                                    <div class="public-comment-container-single">
+                                        <!--Single comment Thread-->
+                                        <div class="public-comment-container-single-flex">
+                                            <img class="comment-profile-photo" src="male.png">
+                                            <label class="comment-profile-name"><a class="profile-name-no-style"
+                                                    href="Profile.html">YourName</a></label>
+                                        </div>
+                                        <div class="public-comment-content">
+                                            <p calss="public-comment-content-style">NICE COMMENT</p>
+                                        </div>
+                                    </div>
+                                    <div class="public-comment-container-single">
+                                        <!--Single comment Thread-->
+                                        <div class="public-comment-container-single-flex">
+                                            <!--Comment flex container for alignment-->
+                                            <img class="comment-profile-photo" src="male.png">
+                                            <!--Comment garne ko profile photo-->
+                                            <label class="comment-profile-name"><a class="profile-name-no-style"
+                                                    href="Profile.html">YourName</a></label>
+                                            <!--Comment garne ko name-->
+                                        </div>
+                                        <div class="public-comment-content">
+                                            <p calss="public-comment-content-style">NICE COMMENT</p>
+                                            <!--Text comment-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-line"></div>
+                                <!--Just for adding a line to seperate add comment container-->
+                                <div class="add-comment-container">
+                                    <img src="male.png" class="comment-profile-photo">
+                                    <!--Your profile picture-->
+                                    <textarea class="add-comment" placeholder="Add comment"></textarea>
+                                    <!--Comment lekne section-->
+                                    <a onclick="" class="post-comment-container"><span id="post-comment" class="material-icons-outlined">
+                                            <!--Comment post garne button-->
+                                            send
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="card">
+                <p>This is empty for now</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trending</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" type="text/css" href="test.css">
+        <script src="https://kit.fontawesome.com/60a2c02fd7.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <style>
+            .material-icons{
+                font-size: 46px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="img-container"><img class="logo-image" src="logo1.png" alt="Logo"></div>
+            
+            <nav>
+                <ul class="nav-un">
+                    <li class="nav-list"><a href="home.html" class="current nav-item"><span class="material-icons-outlined">home</i></a></li>
+                    <li class="nav-list"><a href="#" class="nav-item"><i class="material-icons">
+                        trending_up
+                        </i></a></li>
+                        <div style="padding-right: 0; margin-right: 0;padding-top: 0px; margin-top: 0;"class="input-container nav-list" id="search-container">
+                            <input class="search-txt" type="text" placeholder="Search...">
+                            <span onclick="closesearch()" class="closed material-icons-outlined">
+                                close
+                                </span>
+                        </div>
+                        <li style="padding-left: 0; display: inline;"class="nav-list" id="hide-search" >
+                            <button onclick="search()" class="search-btn nav-item" id="hide-search"><i class="search-button material-icons-outlined">
+                            search
+                            </i>
+                        </button>
+                        </li>
+                    <li class="nav-list"><a href="regional.html" class="nav-item"><span class="material-icons-outlined">
+                        terrain
+                        </span></a></li>
+                        <li class="nav-list"><a href="recommend.html" class="nav-item"><span class="material-icons-outlined">
+                            recommend
+                            </span></a></li>
+                </ul>
+            </nav>
+            <div class="profile-container">
+                <ul class="profile-nav-un">
+                    <li class="profile-nav-list"><a class="dropdown profile-nav-item" href="#"><span class="material-icons-outlined" style="font-size: 26px;">
+                        notifications
+                        </span></a>
+                    </li>
+                   <li class="profile-nav-list"><a  class="profile-nav-item" href="#"><span onclick="myFunction()" class="dropdown dropbtn material-icons-outlined" style="font-size: 30px;">
+                    person
+                    </span></a>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="Profile.html">Your Profile</a>
+                          <a href="#about">Setting</a>
+                          <a href="#contact">Sign Out</a>
+                        </div>
+                </li>
+                </ul>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="left-container">
+                <div class="card">
+                    <p>This is empty for now</p>  
+                </div>
+            
+            </div>
+            <div class="middle-container">
+                <div class="trending-middle-card middle-card">    
+                    <div class="trending-feed-container">
+                        
+                        <div class="post-holding-container">
+                            <div class="post-container">
+
+                            </div>
+                            <div class="react-alignment-container">
+                                <div class="react-container">
+
+                                    <button class="react-btn" onclick="increase(1)"><span class="material-icons-outlined">
+                                        insert_emoticon
+                                    </span></span></button>
+                                <span id="number" class="number"></span>
+                                <button class="react-btn" onclick="increase(-1)"><span class="material-icons-outlined">
+                                        insert_emoticon
+                                    </span> </i></button>
+                                <button class="react-btn comment" onclick="comment()"><span
+                                        class="material-icons-outlined">
+                                        comment
+                                    </span>
+                                </button>
+                                <button class="react-btn share" onclick=""><span class="material-icons-outlined">
+                                        share
+                                    </span>
+                                </button>
+                                </div>
+                                <div class="comment-container" id="showcomment">
+                                    <div class="public-comment-container">
+                                        <div class="public-comment-container-single">
+                                            <div class="public-comment-container-single-flex">
+                                                <img class="comment-profile-photo" src="male.png">
+                                                <label class="comment-profile-name"><a class="profile-name-no-style" href="Profile.html">YourName</a></label>
+                                            </div>
+                                            <div class="public-comment-content">
+                                                <p calss="public-comment-content-style">NICE COMMENT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-line"></div>
+                                    <div class="add-comment-container">
+                                        <img src="male.png" class="comment-profile-photo">
+                                        <textarea class="add-comment" placeholder="Add comment"></textarea>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="card">
+                    <p>This is empty for now</p>
+            
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
